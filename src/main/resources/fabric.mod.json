@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "backwooms",
+  "version": "${version}",
+  "name": "Backwooms",
+  "description": "Life system",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/backwooms/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.tyrone.backwooms.client.BackwoomsDataGenerator"
+    ],
+    "client": [
+      "net.tyrone.backwooms.client.BackwoomsClient"
+    ],
+    "main": [
+      "net.tyrone.backwooms.Backwooms"
+    ]
+  },
+  "mixins": [
+    "backwooms.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
